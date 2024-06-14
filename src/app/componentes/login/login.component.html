@@ -8,7 +8,7 @@
                 formControlName="email"
                 class="w-full"
                 name="email"
-                placeholder="Teclea tu Correo Electrónico"/>
+                placeholder="Escribe tu Correo Electrónico"/>
         </div>
         <small *ngIf="email.invalid && (email.dirty || email.touched)" class="block p-error">
             <div *ngIf="email.errors?.['required']">Email es requerido</div>
