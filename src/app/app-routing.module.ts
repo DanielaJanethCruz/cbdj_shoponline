@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './componentes/login/login.component';
-import { RegisterComponent } from './componentes/register/register.component';
+import { RegisterComponent } from './componentes/register/register.component';import { HomeComponent } from './componentes/home/home.component';
+import { authGuard } from './guardias/auth.guard';
 import { ProductoListaComponent } from './componentes/producto-lista/producto-lista.component';
 
 const routes: Routes = [
@@ -14,8 +15,19 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
+    path: 'home',
+    component: HomeComponent,
+    canActivate: [authGuard]
+  },
+  {
     path: '',
-    component: ProductoListaComponent
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  {
+    path: 'product-list',
+    component: ProductoListaComponent,
+    canActivate: [authGuard]
   }
 ];
 

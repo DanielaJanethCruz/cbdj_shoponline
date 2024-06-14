@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": "e3fb",
+      "fullName": "Ejemplo",
+      "email": "ejemplo@gmail.com",
+      "password": "Ejemplo7!"
+    }
+  ],
+  "products": []
+}
