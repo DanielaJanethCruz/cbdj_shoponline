@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "auev-shop": {
+    "cbdj-shop": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -87,10 +87,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "auev-shop:build:production"
+              "buildTarget": "cbdj-shop:build:production"
             },
             "development": {
-              "buildTarget": "auev-shop:build:development"
+              "buildTarget": "cbdj-shop:build:development"
             }
           },
           "defaultConfiguration": "development"
